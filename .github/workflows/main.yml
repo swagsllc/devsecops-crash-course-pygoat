@@ -24,7 +24,7 @@ jobs:
 
       # run bandit scan 
       - name: run bandit scan
-        run: bandit -r .
+        run: bandit -ii -ll -r . -f json -o bandit-report.json
 
 #    - name: Run Bandit Scan
 #      run: bandit -ll -ii -r . -f json -o bandit-report.json
